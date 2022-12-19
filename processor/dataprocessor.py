@@ -72,7 +72,7 @@ class CsvDataProcessor(DataProcessor):
             print(str(e))
             return False
 
-    #    Сортируем данные по значениям колонки "LKG" и сохраняем результат в атрибуте result
+    #    Сортируем данные по значениям колонки "Calories" и сохраняем результат в атрибуте result
     def run(self):
         self.result = self.sort_data_by_col(self._dataset, "Calories", True)
 
